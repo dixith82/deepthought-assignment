@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepThought - DTthon Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.svg" alt="DeepThought Logo">
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav-link active">Dashboard</a>
+                    <a href="#" class="nav-link">Projects</a>
+                    <a href="#" class="nav-link">Tasks</a>
+                    <a href="#" class="nav-link">Profile</a>
+                </nav>
+                <div class="user-info">
+                    <span class="user-name">Applicant</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Title -->
+            <div class="page-header">
+                <h1 class="page-title">DTthon - Selection Process</h1>
+                <p class="page-subtitle">Complete your tasks and showcase your skills</p>
+            </div>
+
+            <!-- Journey Board (Left Side) -->
+            <div class="journey-board">
+                <div class="board-header">
+                    <h2 class="board-title">
+                        <i class="fas fa-road"></i>
+                        Your Journey Board
+                    </h2>
+                    <button class="expand-all-btn" id="expandAllBtn">
+                        <i class="fas fa-chevron-down"></i>
+                        Expand All
+                    </button>
+                </div>
+
+                <!-- Tasks Container (Tasks will be loaded here) -->
+                <div class="tasks-container" id="tasksContainer">
+                    <!-- Tasks loaded dynamically from JSON -->
+                </div>
+            </div>
+
+            <!-- Content Area (Right Side) -->
+            <div class="content-area">
+                <div class="content-header">
+                    <h2 class="content-title" id="currentTaskTitle">Select a Task</h2>
+                    <div class="task-status">
+                        <span class="status-badge status-pending" id="currentTaskStatus">In Progress</span>
+                    </div>
+                </div>
+                
+                <!-- Assets Container (Assets will be loaded here) -->
+                <div class="assets-container" id="assetsContainer">
+                    <!-- Assets loaded dynamically from JSON -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>DeepThought Education &copy; 2024. All rights reserved.</p>
+            <p class="footer-note">Frontend Intern Assignment - DTthon Implementation</p>
+        </div>
+    </footer>
+
+    <!-- Task Template (Hidden - Used by JavaScript) -->
+    <template id="taskTemplate">
+        <div class="task-item" data-task-id="">
+            <div class="task-header">
+                <div class="task-checkbox">
+                    <input type="checkbox" class="checkbox">
+                </div>
+                <div class="task-info">
+                    <h3 class="task-title">Task Name</h3>
+                    <div class="task-meta">
+                        <span class="task-assets">0 assets</span>
+                        <span class="task-status-text">Pending</span>
+                    </div>
+                </div>
+                <button class="task-toggle-btn">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="task-assets-list">
+                <!-- Assets will be added here -->
+            </div>
+        </div>
+    </template>
+
+    <!-- Asset Template (Hidden - Used by JavaScript) -->
+    <template id="assetTemplate">
+        <div class="asset-container" data-asset-id="">
+            <div class="asset-header">
+                <div class="asset-type-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="asset-info">
+                    <h3 class="asset-title">Asset Title</h3>
+                    <div class="asset-meta">
+                        <span class="asset-type">Article</span>
+                        <span class="asset-duration">5 min</span>
+                    </div>
+                </div>
+                <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="asset-description">
+                <p class="description-text">Asset description goes here...</p>
+                <div class="asset-actions">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-play"></i> Start Task
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-eye"></i> Preview
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

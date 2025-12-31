@@ -1,0 +1,81 @@
+{
+  "tasks": [
+    {
+      "id": "task1",
+      "name": "Webpage Creation",
+      "status": "in_progress",
+      "assets": [
+        {
+          "id": "asset1",
+          "name": "Figma Design Review",
+          "type": "article",
+          "duration": "10 min",
+          "description": "Study the Figma file carefully and understand the design specifications. Pay attention to spacing, colors, typography, and component states.",
+          "content_url": "https://www.figma.com/file/hrBbLgcBWyoomChuEKFmpn/Untitled"
+        },
+        {
+          "id": "asset2",
+          "name": "HTML Structure Setup",
+          "type": "video",
+          "duration": "15 min",
+          "description": "Watch this tutorial on creating semantic HTML structure for the journey board with proper accessibility considerations.",
+          "content_url": null
+        },
+        {
+          "id": "asset3",
+          "name": "CSS Styling Implementation",
+          "type": "article",
+          "duration": "20 min",
+          "description": "Implement the CSS styles matching the Figma design. Use CSS Grid/Flexbox for layouts and implement responsive design.",
+          "content_url": null
+        }
+      ]
+    },
+    {
+      "id": "task2",
+      "name": "Dynamic Elements",
+      "status": "pending",
+      "assets": [
+        {
+          "id": "asset4",
+          "name": "JavaScript Fundamentals",
+          "type": "quiz",
+          "duration": "5 min",
+          "description": "Test your understanding of JavaScript variables, functions, and DOM manipulation concepts.",
+          "content_url": null
+        },
+        {
+          "id": "asset5",
+          "name": "JSON Data Handling",
+          "type": "article",
+          "duration": "10 min",
+          "description": "Learn how to parse JSON data and dynamically render content on the webpage using JavaScript.",
+          "content_url": null
+        },
+        {
+          "id": "asset6",
+          "name": "Event Listeners Implementation",
+          "type": "video",
+          "duration": "12 min",
+          "description": "Implement click events for expandable sections and interactive elements in the journey board.",
+          "content_url": null
+        }
+      ]
+    },
+    {
+      "id": "task3",
+      "name": "Code Optimization",
+      "status": "pending",
+      "assets": [
+        {
+          "id": "asset7",
+          "name": "Code Review Checklist",
+          "type": "reflection",
+          "duration": "10 min",
+          "description": "Use this checklist to review your code for best practices, performance optimizations, and readability improvements.",
+          "content_url": null
+        }
+      ]
+    }
+  ]
+}
